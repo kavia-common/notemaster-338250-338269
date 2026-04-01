@@ -1,10 +1,10 @@
 @import "tailwindcss";
 
 :root {
-  --color-primary: #000000;
+  --color-primary: #111827;
   --color-secondary: #FFFFFF;
   --color-accent: #3B82F6;
-  --color-background: #FFFFFF;
+  --color-background: #f9fafb;
 }
 
 * {
@@ -23,4 +23,62 @@ body {
 
 body {
   font-family: system-ui, -apple-system, sans-serif;
+}
+
+/* Minimal "prose" styling used by the markdown preview. */
+.prose {
+  font-size: 0.95rem;
+  line-height: 1.65;
+}
+
+.prose h1 {
+  font-size: 1.7rem;
+  line-height: 1.2;
+  margin: 0.75rem 0 0.5rem;
+}
+
+.prose h2 {
+  font-size: 1.35rem;
+  line-height: 1.25;
+  margin: 0.9rem 0 0.5rem;
+}
+
+.prose p {
+  margin: 0.6rem 0;
+}
+
+.prose ul,
+.prose ol {
+  margin: 0.6rem 0;
+  padding-left: 1.25rem;
+}
+
+.prose li {
+  margin: 0.2rem 0;
+}
+
+.prose code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
+    "Courier New", monospace;
+  font-size: 0.9em;
+  background: #f1f5f9;
+  border: 1px solid #e2e8f0;
+  padding: 0.1rem 0.25rem;
+  border-radius: 0.25rem;
+}
+
+.prose pre {
+  overflow: auto;
+  padding: 0.9rem 1rem;
+  border-radius: 0.5rem;
+  background: #0f172a;
+  color: #e2e8f0;
+  border: 1px solid #0b1220;
+}
+
+.prose pre code {
+  background: transparent;
+  border: none;
+  padding: 0;
+  color: inherit;
 }
